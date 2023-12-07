@@ -7,7 +7,7 @@
   <title>Fake Terminal Emulator</title>
   <style>
     body {
-      background-color: transparent;
+      background-color: black;
       color: green;
       /* Text color */
       font-family: monospace;
@@ -90,7 +90,7 @@
         event.preventDefault();
         const command = input.value.trim();
         const outputLine = document.createElement('div');
-        outputLine.textContent = `admin@DuckOS: ~/root$ ${command}`;
+        outputLine.textContent = `admin@SwingOS: ~/root$ ${command}`;
         outputDiv.appendChild(outputLine);
         input.value = '';
 
